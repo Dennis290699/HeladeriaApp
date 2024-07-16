@@ -1,0 +1,38 @@
+:root {
+    /* Colores */
+    --color-primary: #00aaff; /* Azul claro para el fondo principal */
+    --color-secondary: #ffcc00; /* Amarillo brillante para destacar */
+    --color-accent: #ffa500; /* Naranja para acentos */
+    --color-text: #333333; /* Color de texto principal */
+    --color-text-light: #ffffff; /* Color de texto claro */
+    --color-details: #d2b48c; /* Color marrón claro para detalles */
+    --color-background: #f8f4f0; /* Fondo claro */
+    --color-surface: #ffffff; /* Fondo de superficies */
+    --color-border: rgba(0, 0, 0, 0.1); /* Bordes ligeros */
+
+    /* Tipografía */
+    --font-family: 'Roboto', sans-serif; /* Fuente principal */
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --font-size-xlarge: 24px;
+
+    /* Espaciado */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xlarge: 32px;
+
+    /* Sombras y bordes */
+    --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-large: 0 8px 16px rgba(0, 0, 0, 0.1);
+    --border-radius-small: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 12px;
+
+    /* Otros */
+    --transition-fast: 0.2s;
+    --transition-medium: 0.3s;
+    --transition-slow: 0.5s;
+}

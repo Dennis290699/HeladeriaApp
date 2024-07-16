@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-large);
+}
+
+/* Estilos del Navbar */
+.navbar {
+    background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+    color: var(--color-text-light);
+    padding: var(--spacing-small) 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: var(--spacing-medium);
+}
+
+.nav-links li a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    transition: all var(--transition-medium) ease;
+    border-radius: var(--border-radius-medium);
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+/* Estilo para el botón de Iniciar Sesión */
+.btn-login {
+    background: linear-gradient(to right, var(--color-secondary), var(--color-accent));
+    color: var(--color-text-light);
+    padding: var(--spacing-small) var(--spacing-large);
+    border-radius: var(--border-radius-large);
+    text-decoration: none;
+    transition: all var(--transition-medium) ease;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar .menu-hamburger {
+    display: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+/*Icono hamburguesa animado*/
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/*Fin del efecto Icono hamburguesa animado*/
+
+/* Estilos de la sección Home */
+.home {
+    background-image: url('../assets/background/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-text-light);
+}
+
+.home h1 {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-large);
+}
+
+.home p {
+    font-size: 1.5rem;
+}
+
+/* Estilos de la sección Productos */
+.productos {
+    padding: var(--spacing-xlarge) 0;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-large);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+}
+
+.producto {
+    background-color: var(--color-surface);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius-large);
+    box-shadow: var(--shadow-medium);
+    text-align: center;
+    transition: transform var(--transition-medium) ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-large);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: var(--border-radius-large);
+    margin-bottom: var(--spacing-large);
+}
+
+.producto h3 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-medium);
+}
+
+.producto p {
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
+/* Estilos de la sección Nosotros */
+.nosotros {
+    padding: var(--spacing-xlarge) 0;
+    background-color: var(--color-background);
+    text-align: center;
+}
+
+.nosotros h2 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-large);
+}
+
+.nosotros p {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--color-text);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos de la sección Contacto */
+.contacto {
+    padding: var(--spacing-xlarge) 0;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-large);
+}
+
+.contacto p {
+    font-size: 1.6rem;
+    line-height: 2;
+    color: var(--color-text);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-large);
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+    margin-top: var(--spacing-large);
+}
+
+.contact-info li {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-small);
+}
+
+.contact-info li i {
+    margin-right: var(--spacing-small);
+}
+
+/* Estilos del Footer */
+footer {
+    background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+    color: var(--color-text-light);
+    padding: var(--spacing-medium) 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menu-hamburger {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 35px;
+        z-index: 2;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
+        backdrop-filter: blur(8px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    .mobile-menu {
+        margin-left: 0;
+        pointer-events: auto;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul li {
+        margin: 15px 0;
+        font-size: 1.3em;
+    }
+}

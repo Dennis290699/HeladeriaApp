@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="#">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <title>Heladería</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Heladería</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#login" class="btn-login">Iniciar sesión</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-hamburger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h1>Bienvenidos a nuestra heladería</h1>
+            <p>Descubre nuestros deliciosos helados artesanales.</p>
+        </div>
+    </section>
+
+    <section id="productos" class="productos">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="grid-container">
+                <div class="producto">
+                    <img src="./assets/background/wallpaper.jpg" alt="Helado 1">
+                    <h3>Helado de Vainilla</h3>
+                    <p>Descripción del helado de vainilla.</p>
+                </div>
+                <div class="producto">
+                    <img src="./assets/background/wallpaper.jpg" alt="Helado 2">
+                    <h3>Helado de Chocolate</h3>
+                    <p>Descripción del helado de chocolate.</p>
+                </div>
+                
+                <!-- Añadir más productos según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <p>Somos una heladería comprometida con la calidad y la frescura de nuestros productos...</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Estamos ubicados en...</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Principal, Ciudad, País</li>
+                <li><i class="fas fa-phone"></i> Teléfono: +123 456 789</li>
+                <li><i class="fas fa-envelope"></i> Email: info@heladeria.com</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Heladería - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
